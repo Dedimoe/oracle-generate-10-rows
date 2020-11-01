@@ -1,6 +1,7 @@
 # oracle-generate-10-rows
 oracle-generate-10-rows
 
+### --1--
 ```
 sqlplus> select level n from dual connect by 1=1 and level <= 10;
 ```
@@ -23,6 +24,7 @@ Output:
  10 rows selected 
 ```
 
+### --2--
 ```
 sqlplus> SELECT LEVEL n FROM DUAL CONNECT BY LEVEL <= 10;
 ```
@@ -44,6 +46,7 @@ Output:
  10 rows selected 
 ```
 
+### --3--
 ```
 sqlplus> select rownum n from dual connect by rownum <= 10;
 ```
